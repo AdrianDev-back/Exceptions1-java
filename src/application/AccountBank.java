@@ -36,8 +36,8 @@ public class AccountBank {
 		
 		System.out.println();
 		System.out.print("Enter amount for withdraw: ");
-		double withdraw = sc.nextDouble();
-		acc.withdrawExceptions(withdraw);
+		double amount = sc.nextDouble();
+		acc.withdrawExceptions(amount);
 		System.out.println("New balance: " + String.format("%.2f", acc.getBalance()));
 		}
 		catch (WithdrawException e){
